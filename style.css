@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+
+.header-wrapper {
+  height: 100vh;
+  background: linear-gradient(220deg, #5ec8ff 18%, #fff 72%);
+  position: relative;
+}
+
+.header-wrapper img.desktop-bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+header.main-header {
+  font-family: "Raleway", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav.main-nav {
+  padding-top: 32px;
+}
+
+nav.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #00324b;
+  height: 48px;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+nav.main-nav ul li a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: calc(100vh - 96px);
+}
+
+.hero-container h1.hero-heading {
+  font-size: 48px;
+  color: #d62828;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.hero-container h1.hero-heading::before {
+  content: "";
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  background: rgba(0, 50, 75, 0.1);
+  left: -48px;
+  top: -56px;
+  z-index: -100;
+}
+
+.hero-container p.hero-subheading {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hero-container .hero-left,
+.hero-container .hero-right {
+  z-index: 100;
+}
+
+.hero-container a.btn {
+  display: inline-block;
+  background: #00324b;
+  padding: 12px 42px;
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.hero-container .hero-right .searchbox-container {
+  text-align: right;
+  margin-top: 48px;
+}
+
+.hero-container .hero-right .searchbox-container input[type="text"] {
+  padding: 12px 32px;
+  border: 1px solid #00324b;
+  border-radius: 10px 0 0 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.hero-container .hero-right .searchbox-container input[type="submit"] {
+  padding: 12px 32px;
+  border: 1px solid #00324b;
+  border-radius: 10px;
+  background: #00324b;
+  color: #fcfcfc;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: -12px;
+}
+
+.hero-container .hero-right .hero-image {
+  margin-right: -42px;
+}
